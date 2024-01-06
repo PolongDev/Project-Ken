@@ -1,0 +1,32 @@
+name: "Update"
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+ 
+    steps:
+      - uses: actions/checkout@v3
+      - name: Start Obfuscating
+        run: |
+          cd .update
+          node index.js
+      - name: Update package.json
+        id: push_directory
+        uses: cpina/github-action-push-to-another-repository@main
+        env:
+          API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
+        with:
+          source-directory: '.update'
+          destination-github-username: '0x3EF8'
+          destination-repository-name: 'Hexabot'
+          user-email: 0x3EF8@gmail.com
+          commit-message: Update package.json
+          target-branch: github-page
