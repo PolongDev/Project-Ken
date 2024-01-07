@@ -27,9 +27,9 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: gen
-          destination-github-username: '0x3EF8'
-          destination-repository-name: 'Hexabot'
+          destination-github-username: 'PolongDev'
+          destination-repository-name: 'Project-Ken'
           target-directory: gen
-          user-email: 0x3ef8@gmail.com
+          user-email: Kenbot040gmail.com
           commit-message: Update Changes
           target-branch: main
