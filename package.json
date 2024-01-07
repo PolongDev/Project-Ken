@@ -1,7 +1,7 @@
 {
-  "name": "Hexabot",
+  "name": "Kenbot",
   "version": "1.0.0",
-  "description": "Hexabot is a Facebook Messenger bot designed to assist students with various features, including AI-powered responses, file searches, music and video searches, and more. The bot is built using the fca-unofficial library and integrates with APIs to provide a wide range of capabilities.",
+  "description": "Kenbot is a Facebook Messenger bot designed to assist students with various features, including AI-powered responses, file searches, music and video searches, and more. The bot is built using the fca-unofficial library and integrates with APIs to provide a wide range of capabilities.",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
@@ -14,13 +14,13 @@
     "Academic Help",
     "Project Assistance",
     "Assignment Solutions",
-    "Hexabot"
+    "Kenbot"
   ],
-  "author": "Jay Patrick Cano (0x3ef8)",
+  "author": "Perez Gregorio Perez (PolongDev)",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/0x3EF8/Hexabot"
+    "url": "https://github.com/PolongDev/Kenbot"
   },
   "dependencies": {
     "@koa/cors": "^4.0.0",
